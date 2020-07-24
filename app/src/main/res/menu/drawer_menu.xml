@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/menuFirstItemTitle">
+            <menu>
+                <item
+                    android:id="@+id/nav_courseCatalog"
+                    android:icon="@drawable/catalog2"
+                    android:title="@string/nav_courseCatalog" />
+
+                <item
+                    android:id="@+id/nav_courses"
+                    android:icon="@drawable/course2"
+                    android:title="@string/nav_courses" />
+
+                <item
+                    android:id="@+id/nav_account"
+                    android:icon="@drawable/account2"
+                    android:title="@string/nav_account" />
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/menuSecondItemTitle">
+            <menu>
+                <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@drawable/contact2"
+                    android:title="@string/nav_contact" />
+
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/about2"
+                    android:title="@string/nav_about" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

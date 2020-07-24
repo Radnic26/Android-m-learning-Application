@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".InsideCourseActivity">
+
+    <ImageView
+        android:id="@+id/inside_course_image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inside_course_image"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Title Text"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDescriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitleText"
+        android:fontFamily="sans-serif-dark"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Description Text"
+        android:textColor="#000000"
+        android:textSize="21sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tvLongDescriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDescriptionText"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Long Description Text"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnEnroll"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@id/tvDescriptionText"
+        android:layout_marginTop="440dp"
+        android:gravity="center_horizontal"
+        android:text="Enroll" />
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".InsideMyCourse">
+
+    <ImageView
+        android:id="@+id/inside_my_course_image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvMyTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inside_my_course_image"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/tvMyTitleText"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMyTitleText"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/tvContent"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnFinished"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@id/tvContent"
+        android:layout_marginTop="360dp"
+        android:gravity="center_horizontal"
+        android:text="@string/btnFinished" />
+
+</RelativeLayout>

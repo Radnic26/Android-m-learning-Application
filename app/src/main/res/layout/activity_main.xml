@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="127dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/loogo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/username" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/etUsername"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/pass" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/etPassword"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/cbRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="38dp"
+        android:text="@string/cbRemember" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/btnLogin" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNotRegistered"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/tvNotRegistered" />
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:text="@string/tvRegister"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvForgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvForgotPass" />
+
+        <TextView
+            android:id="@+id/tvResetPass"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:text="@string/tvResetPass"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
